@@ -101,9 +101,14 @@ input, select, textarea {
 
 	body 
 	{
-		background: -webkit-linear-gradient(90deg,#6FC3ED,#eb42eb);
+		/*background: -webkit-linear-gradient(90deg,#6FC3ED,#eb42eb);
 		background: -moz-linear-gradient(90deg,#6FC3ED,#eb42eb);
-		background: linear-gradient(90deg,#6FC3ED,#eb42eb);
+		background: linear-gradient(90deg,#6FC3ED,#eb42eb);*/
+		
+		background: linear-gradient(90deg,#6FC3ED,#c75b9b), url("./images/rose.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: screen;
 	}
 		
 		
@@ -2964,14 +2969,22 @@ input, select, textarea {
 							opacity: 0;
 						}
 
+						
+
 						#main .inner .svgimg
 					    {
 						width:100%;
 						margin: 0 auto;
 						text-align: center;
+				        
+						position: relative;
+						bottom: 80px;
+						font-family: font-family: 'Share Tech Mono', monospace;
 						
 
 					    }
+
+						
 
  
 						#about-area svg
@@ -2991,9 +3004,9 @@ input, select, textarea {
                           transform: translateY(0);
                           }
                           to
-    {
-        transform: translateY(20px);
-    }
+    					 {
+        				transform: translateY(20px);
+    					 }
 }
 
 		@media screen and (max-width: 736px) {
@@ -3188,7 +3201,8 @@ input, select, textarea {
 					{
 						width:95%;
 						margin: auto;
-						
+						position: relative;
+						top: 5px;
 					}
 					#main .inner .svgimg svg
 					{
