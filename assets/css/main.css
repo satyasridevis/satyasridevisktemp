@@ -2988,6 +2988,7 @@ input, select, textarea {
 						bottom: 80px;
 						font-family: 'Share Tech Mono', monospace;
 						
+						
 
 					    }
 
@@ -3006,7 +3007,7 @@ input, select, textarea {
  
 						#main .inner .svgimg svg
 						{
-                            width: 600px;
+                            width: 500px;
                             height: 500px;
 
                         }
@@ -3215,19 +3216,22 @@ input, select, textarea {
 					{
 						width:95%;
 						margin: auto;
-
-					
+						height: auto;
 						position: relative;
+						bottom: 150px;
 						
-						
-						
-						
+
 					}
 					#main .inner .svgimg svg
 					{
-						width: 400px;
-						height: 600px;
+						width: 310px;
+						height: 500px;
 						
+					}
+					#main .inner .svgimg h1
+					{
+						position: relative;
+						bottom: 100px;
 						
 					}
 
