@@ -101,15 +101,17 @@ input, select, textarea {
 
 	body 
 	{
-		/*background: -webkit-linear-gradient(90deg,#6FC3ED,#eb42eb);
+		background: -webkit-linear-gradient(90deg,#6FC3ED,#eb42eb);
 		background: -moz-linear-gradient(90deg,#6FC3ED,#eb42eb);
-		background: linear-gradient(90deg,#6FC3ED,#eb42eb);*/
+		background: linear-gradient(90deg,#6FC3ED,#eb42eb);
 		
-		background: linear-gradient(90deg,#6FC3ED,#c75b9b), url("./images/rose.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: screen;
-	}
+		
+		
+		
+       
+		
+		}
+		
 		
 		
    	
@@ -2589,7 +2591,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -2601,6 +2603,7 @@ input, select, textarea {
 			position: relative;
 			width: calc(33.33333% - 2.5em);
 			margin: 2.5em 0 0 2.5em;
+			
 		}
 
 			.tiles article > .image {
@@ -2618,6 +2621,8 @@ input, select, textarea {
 				.tiles article > .image img {
 					display: block;
 					width: 100%;
+					height: 320px;
+					
 				}
 
 				.tiles article > .image:before {
@@ -2845,9 +2850,9 @@ input, select, textarea {
 
 /* Header */
 
-	#header {
-		padding: 8em 0 0.1em 0 ;
-		
+	#header 
+	{
+		padding: 4em 0 0.1em 0;
 	}
 
 		#header .logo {
@@ -2861,7 +2866,7 @@ input, select, textarea {
 			text-transform: uppercase;
 			display: inline-block;
 			position: relative;
-			bottom: 4.9em;
+			bottom: 1.4em;
 			
 		}
 
@@ -2886,6 +2891,7 @@ input, select, textarea {
 			right: 2em;
 			top: 2em;
 			z-index: 10000;
+			
 		}
 
 			#header nav ul {
@@ -2931,6 +2937,7 @@ input, select, textarea {
 						overflow: hidden;
 						padding: 0;
 						white-space: nowrap;
+						
 
 					}
 
@@ -2979,10 +2986,20 @@ input, select, textarea {
 				        
 						position: relative;
 						bottom: 80px;
-						font-family: font-family: 'Share Tech Mono', monospace;
+						font-family: 'Share Tech Mono', monospace;
 						
 
 					    }
+
+						#main .inner h1
+						{
+							text-align: center;
+						}
+
+						#main .inner #webdevbanner 
+						{
+							text-align: center;
+						}
 
 						
 
@@ -3007,8 +3024,8 @@ input, select, textarea {
     					 {
         				transform: translateY(20px);
     					 }
-}
-
+                         }
+						 
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -3026,7 +3043,7 @@ input, select, textarea {
 					#header .logo
 					{
 						position: relative;
-						bottom:3em;
+						bottom:2.9em;
 					}
 
 		}
@@ -3039,6 +3056,7 @@ input, select, textarea {
 		-ms-transition: opacity 0.45s ease;
 		transition: opacity 0.45s ease;
 		opacity: 1;
+		
 			}
 
 	#menu {
@@ -3202,12 +3220,16 @@ input, select, textarea {
 						width:95%;
 						margin: auto;
 						position: relative;
-						top: 5px;
+						
+						
+						
+						
 					}
 					#main .inner .svgimg svg
 					{
 						width: 100%;
-						height: 300px;
+						height: 400px;
+						
 					}
 
 		}
@@ -3241,13 +3263,14 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		padding: 0em 0 6em 0 ;
+		padding: 1em 2em 6em 2em;
+		
 	}
 
 		@media screen and (max-width: 736px) {
 
 			#main {
-				padding: 0em 0 4em 0 ;
+				padding: 1em 1em 6em 1em ;
 			}
 
 		}
@@ -3255,9 +3278,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		padding: 5em 0 6em 0 ;
+		padding: 8em 0 6em 0;
 		background-color: #585858;
 		color: #f6f6f6;
+		
+		
 	}
 
 		#footer > .inner {
@@ -3292,9 +3317,9 @@ input, select, textarea {
 			#footer > .inner .copyright {
 				width: 100%;
 				padding: 0;
-				margin-top: 5em;
+				margin-top: 3em;
 				list-style: none;
-				font-size: 1.4em;
+				font-size: 1em;
 				color: #f6f6f6;
 
 			}
@@ -3411,12 +3436,15 @@ input, select, textarea {
 		max-width: 68em;
 		margin: 0 auto;
 		padding: 0 2.5em;
+		height:auto;
+		
 	}
 
 		@media screen and (max-width: 736px) {
 
 			#wrapper > * > .inner {
 				padding: 0 1.25em;
+				height: auto;
 			}
 
 		}
