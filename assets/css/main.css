@@ -2995,6 +2995,15 @@ input, select, textarea {
 						#main .inner h1
 						{
 							text-align: center;
+							
+						}
+
+						#main .inner li
+						{
+							color: #fff;
+							list-style:none;
+							font-size: 1.3rem;
+							font-weight: bold;
 						}
 
 						#main .inner #webdevbanner 
@@ -3026,6 +3035,38 @@ input, select, textarea {
         				transform: translateY(20px);
     					 }
                          }
+
+						 #main .inner .image-container 
+						 {
+							display: flex;
+							flex-direction: row;
+							
+							width: 95%;
+							margin: auto;
+						 }
+						 #main .inner a img
+						 {
+							 width: 350px;
+							 height: 300px;	
+							 padding: 1em;
+							 
+						}
+						@media screen and (max-width: 600px)
+						{
+							#main .inner .image-container
+							{
+								display: flex;
+								flex-direction: column;
+							}
+						}
+
+						
+/*roadmap.html*/
+						
+
+
+						
+						
 						 
 		@media screen and (max-width: 736px) {
 
