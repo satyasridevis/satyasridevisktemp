@@ -3003,7 +3003,7 @@ input, select, textarea {
 							color: #fff;
 							list-style:none;
 							font-size: 1.3rem;
-							font-weight: bold;
+							
 						}
 
 						#main .inner #webdevbanner 
@@ -3051,17 +3051,303 @@ input, select, textarea {
 							 padding: 1em;
 							 
 						}
+						/*mynotes.html*/
+						pre code
+						{
+							width:100%;
+							background: #000;
+							display: block;
+							white-space: pre;
+							overflow-x: scroll;
+							padding:0;
+							font-family: monospace;
+							
+							
+						}
+						/*aboutme.html*/
+						#main .inner .content
+						{
+							width:84%;
+							height: 400px;
+							margin: auto;
+							background: repeating-linear-gradient(120deg,white 0, white 450px, #6FC3ED 10%, #6FC3ED);
+							display: flex;
+							flex-direction: row;
+							border-radius: 10px;
+						}
+
+						#main .inner .content svg
+						{
+                            width:400px;
+							height:380px;
+							position: relative;
+							top: 10px;
+						}
+
+						#main .inner .content .bio 
+						{
+							
+							width: 50%;
+							position: relative;
+							left: 3.5rem;
+							bottom: 3rem;
+						
+						}
+						#main .inner .content .bio h1
+						{
+							position: relative;
+							top: 4rem;
+							letter-spacing: 1px;
+							
+						}
+
+						#main .inner .content .bio p
+						{
+
+							padding: 1rem;
+							font-size: 1.1rem;
+							font-weight: 400;
+							font-family: 'Lato', sans-serif;
+							text-align: justify;
+							letter-spacing: 1px;
+							
+						}
+
+						#main .inner .content .bio p span
+						{
+							font-size: 2rem;
+							font-family: 'Graduate', cursive;
+						}
+
+							/* rocket animation svg*/
+						.area 
+						{
+							width: 100%;
+							height: 100vh;
+							
+							
+						}
+
+						.rocketfly
+						{
+							 position: absolute;
+           					 top:0;
+   						     left:0;
+						     right: 0;
+							 bottom:0;
+   							 width: 100%;
+   							 height: 100%;
+   							 overflow: hidden;
+						}
+
+						.rocketfly li img 
+						 {
+							 width: 150px;
+							 height: 150px;
+						 }
+
+						.rocketfly li
+						{
+							position: absolute;
+							list-style: none;
+							animation: animate 10s linear infinite;
+							z-index: -1;
+							
+						}
+
+						.rocketfly li:nth-child(1){
+							left: 30%;
+							top:0;
+							right:0;
+							bottom:0;
+							animation-delay: 5s;
+							
+							
+				         }
+
+						 .rocketfly li:nth-child(2)
+						 {
+							left: 60%;
+							top:0;
+							right:0;
+							bottom:0;
+							animation-delay: 3s;
+							
+							
+				         }
+
+						 .rocketfly li:nth-child(3){
+							left: 90%;
+							top:0;
+							right:0;
+							bottom:0;
+							animation-delay: 1s;
+							
+							
+				         }
+
+						@keyframes animate
+						{
+
+							0%
+							{
+								top: 100%;
+								opacity:1.5;
+							}
+						
+							50%
+							{
+								top:50%;
+								opacity:1;
+						    }
+
+							100%
+							{
+                                 top:-10%;
+								 opacity:0;
+
+							}
+						
+						}
+						
+						
+
+					
+						
+
+						/*aboutme.html mobile view*/
+
+						@media screen and (max-width: 600px)
+						{
+							
+							#main
+							{
+								width: 100%;
+								
+							}
+							
+							
+							#main .inner .content
+							{
+								width: 100%;
+								height: auto;
+								margin: auto;
+								display:flex;
+								flex-direction: column;
+								background: none;
+								
+							}
+
+							#main .inner .content svg
+							{
+								/*width: 100%;
+								object-fit: cover;*/
+								display:none;
+							}
+							#main .inner .content .bio 
+							{
+								width: 100%;
+								margin: auto;
+								
+								position: relative;
+								top: 10px;
+								left:0;
+							}
+                            #main .inner .content .bio h1
+							{
+								display:none;
+							}
+
+
+							#main .inner .content .bio p
+						   {
+
+							padding: 0;
+							font-size: 1rem;
+							font-weight: 400;
+							font-family: 'Lato', sans-serif;
+							text-align: justify;
+							letter-spacing: 1px;
+							
+						   }
+
+						   .rocketfly
+						   {
+							 position: absolute;
+						     top:0;
+   						     left:0;
+						     right: 0;
+							 bottom:0;
+   							 width: 100%;
+   							 height: 100%;
+   							 overflow: hidden;
+						    }
+
+						.rocketfly li
+						{
+							position: absolute;
+							list-style: none;
+							animation: animate 10s linear infinite;
+							z-index: -1;
+							
+							
+						}
+
+						.rocketfly li:nth-child(1)
+						{
+							left: 35%;
+							top:0;
+							right:0;
+							bottom:0;
+							animation-delay: 6s;
+						 }
+						 
+
+						 .rocketfly li img 
+						 {
+							 width: 100px;
+							 height: 100px;
+						 }
+
+						@keyframes animate
+						{
+
+							0%
+							{
+								top: 100%;
+								opacity:1.5;
+							}
+						
+							50%
+							{
+								top:50%;
+								opacity:1;
+						    }
+
+							100%
+							{
+                                 top:-10%;
+								 opacity:0;
+
+							}
+						
+						}
+						}
+						
+
+						
 						@media screen and (max-width: 600px)
 						{
 							#main .inner .image-container
 							{
 								display: flex;
 								flex-direction: column;
+								
 							}
 						}
 
 						
-/*roadmap.html*/
+
 						
 
 
