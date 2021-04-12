@@ -285,7 +285,7 @@ input, select, textarea {
 		padding: 0.5em 0 0.5em 2em;
 	}
 
-	code {
+	/*code {
 		background: rgba(144, 144, 144, 0.075);
 		border-radius: 4px;
 		border: solid 1px #c9c9c9;
@@ -307,7 +307,7 @@ input, select, textarea {
 			line-height: 1.75;
 			padding: 1em 1.5em;
 			overflow-x: auto;
-		}
+		}*/
 
 	hr {
 		border: 0;
@@ -3052,18 +3052,24 @@ input, select, textarea {
 							 
 						}
 						/*mynotes.html*/
-						pre code
+						#sass code
 						{
-							width:100%;
-							background: #000;
-							display: block;
-							white-space: pre;
-							overflow-x: scroll;
-							padding:0;
-							font-family: monospace;
-							
-							
-						}
+  							display: block;
+ 						    white-space: pre;
+ 							position: relative;
+  							word-break: normal;
+  							word-wrap: normal;
+  							line-height: 1;
+ 							padding: 0;
+  							
+  							background-color: #000;
+  							text-align: left;
+  							font-size: 1.2rem;
+  							width: 60%;
+  							overflow-x: scroll;
+  							font-family: monospace;
+  							color: #fff;
+						 }
 						/*aboutme.html*/
 						#main .inner .content
 						{
